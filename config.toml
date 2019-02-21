@@ -1,0 +1,6 @@
+baseURL = "https://vinyl.co.id/"
+languageCode = "id-ID"
+title = "Jual Vinyl Lantai, Karpet Vinyl, Wallpaper Lantai"
+
+[taxonomies]
+  tag = "tag"

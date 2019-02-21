@@ -1,0 +1,17 @@
+{{ partial "header" . }}
+
+<div class="container">
+    <div class="col-md-12 col-sm-12">
+        {{ .Content }}
+        <hr>
+        <p>
+            Tagar:
+            {{ $siteurl := .Site.BaseURL }}
+            {{ range .Params.tag }}
+            #<a href="{{ $siteurl }}tagar/{{ . | urlize }}">{{ . }}</a>
+            {{ end }}
+        </p>
+    </div>
+</div>
+
+{{ partial "footer" . }}
