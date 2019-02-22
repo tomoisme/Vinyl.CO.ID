@@ -13,6 +13,16 @@
         </ul>
 
         {{ partial "pagination" . }}
+
+        <hr>
+
+        <p>
+            Tagar:
+            {{ $siteurl := .Site.BaseURL }}
+            {{ range .Params.tag }}
+            #<a href="{{ $siteurl }}tagar/{{ . | urlize }}">{{ . }}</a>
+            {{ end }}
+        </p>
     </div>
 </div>
 
